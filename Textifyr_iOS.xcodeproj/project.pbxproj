@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		89148FC32F9A894300D354DF /* TextifyrModels in Frameworks */ = {isa = PBXBuildFile; productRef = 89148FC22F9A894300D354DF /* TextifyrModels */; };
+		89148FC52F9A894300D354DF /* TextifyrServices in Frameworks */ = {isa = PBXBuildFile; productRef = 89148FC42F9A894300D354DF /* TextifyrServices */; };
+		89148FC72F9A894300D354DF /* TextifyrViewModels in Frameworks */ = {isa = PBXBuildFile; productRef = 89148FC62F9A894300D354DF /* TextifyrViewModels */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		89FDFC1D2F99426000313F18 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		89FDFC0F2F99425F00313F18 /* Textifyr_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Textifyr_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+89FDFC0F2F99425F00313F18 /* Textifyr_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Textifyr_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FDFC1C2F99426000313F18 /* Textifyr_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Textifyr_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FDFC262F99426000313F18 /* Textifyr_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Textifyr_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89148FC72F9A894300D354DF /* TextifyrViewModels in Frameworks */,
+				89148FC32F9A894300D354DF /* TextifyrModels in Frameworks */,
+				89148FC52F9A894300D354DF /* TextifyrServices in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +121,9 @@
 			);
 			name = Textifyr_iOS;
 			packageProductDependencies = (
+				89148FC22F9A894300D354DF /* TextifyrModels */,
+				89148FC42F9A894300D354DF /* TextifyrServices */,
+				89148FC62F9A894300D354DF /* TextifyrViewModels */,
 			);
 			productName = Textifyr_iOS;
 			productReference = 89FDFC0F2F99425F00313F18 /* Textifyr_iOS.app */;
@@ -195,6 +207,9 @@
 			);
 			mainGroup = 89FDFC062F99425F00313F18;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				89148FC12F9A894300D354DF /* XCLocalSwiftPackageReference "../TextifyrCore" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 89FDFC102F99425F00313F18 /* Products */;
 			projectDirPath = "";
@@ -395,6 +410,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GDR6PYP3RX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -426,6 +442,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GDR6PYP3RX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -570,6 +587,28 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		89148FC12F9A894300D354DF /* XCLocalSwiftPackageReference "../TextifyrCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../TextifyrCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		89148FC22F9A894300D354DF /* TextifyrModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TextifyrModels;
+		};
+		89148FC42F9A894300D354DF /* TextifyrServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TextifyrServices;
+		};
+		89148FC62F9A894300D354DF /* TextifyrViewModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TextifyrViewModels;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 89FDFC072F99425F00313F18 /* Project object */;
 }
