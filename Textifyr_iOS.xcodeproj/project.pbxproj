@@ -10,6 +10,7 @@
 		89148FC32F9A894300D354DF /* TextifyrModels in Frameworks */ = {isa = PBXBuildFile; productRef = 89148FC22F9A894300D354DF /* TextifyrModels */; };
 		89148FC52F9A894300D354DF /* TextifyrServices in Frameworks */ = {isa = PBXBuildFile; productRef = 89148FC42F9A894300D354DF /* TextifyrServices */; };
 		89148FC72F9A894300D354DF /* TextifyrViewModels in Frameworks */ = {isa = PBXBuildFile; productRef = 89148FC62F9A894300D354DF /* TextifyrViewModels */; };
+		891490212F9AEC8000D354DF /* SpeakerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 891490202F9AEC8000D354DF /* SpeakerKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +31,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-89FDFC0F2F99425F00313F18 /* Textifyr_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Textifyr_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89FDFC0F2F99425F00313F18 /* Textifyr_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Textifyr_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FDFC1C2F99426000313F18 /* Textifyr_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Textifyr_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89FDFC262F99426000313F18 /* Textifyr_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Textifyr_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		891490232F9BD45E00D354DF /* Exceptions for "Textifyr_iOS" folder in "Textifyr_iOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Textifyr-iOS-Info.plist",
+			);
+			target = 89FDFC0E2F99425F00313F18 /* Textifyr_iOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		89FDFC112F99425F00313F18 /* Textifyr_iOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				891490232F9BD45E00D354DF /* Exceptions for "Textifyr_iOS" folder in "Textifyr_iOS" target */,
+			);
 			path = Textifyr_iOS;
 			sourceTree = "<group>";
 		};
@@ -59,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89148FC72F9A894300D354DF /* TextifyrViewModels in Frameworks */,
+				891490212F9AEC8000D354DF /* SpeakerKit in Frameworks */,
 				89148FC32F9A894300D354DF /* TextifyrModels in Frameworks */,
 				89148FC52F9A894300D354DF /* TextifyrServices in Frameworks */,
 			);
@@ -124,6 +139,7 @@
 				89148FC22F9A894300D354DF /* TextifyrModels */,
 				89148FC42F9A894300D354DF /* TextifyrServices */,
 				89148FC62F9A894300D354DF /* TextifyrViewModels */,
+				891490202F9AEC8000D354DF /* SpeakerKit */,
 			);
 			productName = Textifyr_iOS;
 			productReference = 89FDFC0F2F99425F00313F18 /* Textifyr_iOS.app */;
@@ -209,6 +225,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				89148FC12F9A894300D354DF /* XCLocalSwiftPackageReference "../TextifyrCore" */,
+				8914901F2F9AEC8000D354DF /* XCRemoteSwiftPackageReference "argmax-oss-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 89FDFC102F99425F00313F18 /* Products */;
@@ -413,6 +430,7 @@
 				DEVELOPMENT_TEAM = GDR6PYP3RX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Textifyr-iOS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,6 +463,7 @@
 				DEVELOPMENT_TEAM = GDR6PYP3RX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Textifyr-iOS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -595,6 +614,17 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		8914901F2F9AEC8000D354DF /* XCRemoteSwiftPackageReference "argmax-oss-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argmaxinc/argmax-oss-swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		89148FC22F9A894300D354DF /* TextifyrModels */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -607,6 +637,11 @@
 		89148FC62F9A894300D354DF /* TextifyrViewModels */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TextifyrViewModels;
+		};
+		891490202F9AEC8000D354DF /* SpeakerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8914901F2F9AEC8000D354DF /* XCRemoteSwiftPackageReference "argmax-oss-swift" */;
+			productName = SpeakerKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
